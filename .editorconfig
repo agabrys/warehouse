@@ -7,7 +7,7 @@ insert_final_newline = true
 [*.bat]
 end_of_line = crlf
 
-[*.{gradle, java}]
+[*.{gradle, java, yaml}]
 charset = utf-8
 indent_style = space
 indent_size = 2
