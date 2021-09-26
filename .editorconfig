@@ -7,7 +7,11 @@ insert_final_newline = true
 [*.bat]
 end_of_line = crlf
 
-[*.{gradle, java, yaml}]
+[*.{csv, properties}]
+charset = utf-8
+trim_trailing_whitespace = true
+
+[*.{gradle, java, sql, yaml}]
 charset = utf-8
 indent_style = space
 indent_size = 2

@@ -14,7 +14,14 @@ repositories {
 }
 
 dependencies {
+  implementation 'com.github.housepower:clickhouse-native-jdbc-shaded:2.5.6'
+  implementation 'org.springframework.boot:spring-boot-starter-batch'
+  implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
   implementation 'org.springframework.boot:spring-boot-starter-web'
+
+  runtimeOnly 'com.h2database:h2'
+
+  testImplementation 'org.assertj:assertj-core'
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
